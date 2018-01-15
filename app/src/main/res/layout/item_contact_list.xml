@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_margin="8dp"
+                                                 android:layout_marginTop="4dp"
+                                                 app:layout_constraintLeft_toLeftOf="parent"
+                                                 app:layout_constraintTop_toTopOf="parent"
+                                                 app:layout_constraintBottom_toBottomOf="parent"
+                                                 app:layout_constraintRight_toRightOf="parent"
+                                                 android:layout_marginBottom="4dp">
+
+        <TextView
+                android:textColor="@color/textBlack"
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-regular"
+                android:layout_marginTop="4dp"/>
+
+        <TextView
+                android:textColor="@color/textBlack"
+                android:id="@+id/txtPhone"
+                app:layout_constraintTop_toBottomOf="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="sans-serif-light"/>
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_person"
+                android:id="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
